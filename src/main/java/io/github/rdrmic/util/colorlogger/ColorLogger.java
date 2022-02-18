@@ -6,7 +6,7 @@ import org.slf4j.LoggerFactory;
 public class ColorLogger {
 	
 	private static final String CODE_BOLD = "\u001b[1m";
-	private static final String CODE_COLOR_YELLOW = "\u001b[33m";
+	private static final String CODE_COLOR_ORANGE = "\u001b[33m";
 	private static final String CODE_COLOR_GREEN = "\u001b[32m";
 	private static final String CODE_COLOR_RED = "\u001b[31m" + CODE_BOLD;
 	private static final String CODE_COLOR_BLUE = "\u001b[34m" + CODE_BOLD;
@@ -24,7 +24,7 @@ public class ColorLogger {
 	
 	// DEBUG
 	public void debug(final Object obj) {
-		toLogger(CODE_COLOR_YELLOW, obj);
+		toLogger(CODE_COLOR_ORANGE, obj);
 	}
 	
 	public void debug(final String fmt, final Object... obj) {
